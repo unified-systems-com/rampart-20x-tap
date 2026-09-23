@@ -1,0 +1,30 @@
+# Identity chain (pre-boot conformance gate enforces agreement):
+#   slug = "rampart_20x"  ·  distribution = "rampart-20x-tap"  ·  import namespace = "tap_plugin.rampart_20x"
+#   entry-point key = "rampart_20x"
+[project]
+name = "rampart-20x-tap"
+description = "Rampart 20x: the product container for a full FedRAMP 20x analysis and review platform (trust center, VDR mapping, diagramming, KSI implementation). v0 is deliberately empty: plugins are composed into it as they are built."
+readme = "README.md"
+requires-python = ">=3.14"
+dynamic = ["version"]
+dependencies = []
+
+[project.entry-points."tap.plugins"]
+rampart_20x = "tap_plugin.rampart_20x.apps:Rampart20xConfig"
+
+# The plugin's OWN dev closure (PEP 735), so its suite runs in a bare checkout. Never installed by boot.
+[dependency-groups]
+dev = ["pytest>=8.3", "pytest-django>=4.9", "factory-boy>=3.3"]
+
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.version.raw-options]
+fallback_version = "0.0.0"
+
+[tool.hatch.build.targets.wheel]
+only-include = ["tap_plugin/rampart_20x"]
