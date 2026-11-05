@@ -1,6 +1,6 @@
 manifest_version = "0"
 plugin_version = "0.1.0"
-requires_tap = ">=0.2.1"
+requires_tap = ">=0.3.0"
 slug = "rampart_20x"
 name = "Rampart 20x"
 description = "Rampart 20x: the product container for a full FedRAMP 20x analysis and review platform (trust center, VDR mapping, diagramming, KSI implementation). v0 is deliberately empty: plugins are composed into it as they are built."
@@ -14,4 +14,4 @@ status = "compatible"
 [[boot.records]]
 name = "ci"
 description = "RESERVED NAME (req-boot-bootstrap-ci-record): the stack this plugin's own tests run in — depends_on closure (empty) + self, offline, credential-free. The consumer flips self to editable."
-sha256 = "0500337c73ff5af23a4de90f40bb29a51f4a35f01725eb23eda39681eb94d4c7"
+sha256 = "2abb08bebc8c54885be6739cbd6959d2751b3a0261550f4dfa1c47a571d81373"

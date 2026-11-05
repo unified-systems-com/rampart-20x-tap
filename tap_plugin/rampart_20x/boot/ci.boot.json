@@ -9,7 +9,7 @@
         "source": {
           "type": "git",
           "url": "https://github.com/unified-systems-com/rampart-20x-tap",
-          "rev": "ddd639c4cccd0d1076bb9f2365815a2376215778"
+          "rev": "v0.1.0"
         },
         "note": "Self, pinned at the bootstrap commit until the first tagged release; the consumer (plugin-ci, or `spawn --dev-plugins rampart_20x`) substitutes the checkout under test via tap.dev_workspace (req-boot-bootstrap-ci-record-4)."
       }
