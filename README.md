@@ -11,5 +11,5 @@ Rampart 20x: the product container for a full FedRAMP 20x analysis and review pl
 From a TAP core checkout:
 
 ```bash
-scripts/spawn-session.sh <label> cli --from 'git+https://github.com/CriticalSecLLC/rampart-20x-tap@<rev>#ci' --dev-plugins rampart_20x
+scripts/spawn-session.sh <label> cli --from 'git+https://github.com/unified-systems-com/rampart-20x-tap@<rev>#ci' --dev-plugins rampart_20x
 ```
