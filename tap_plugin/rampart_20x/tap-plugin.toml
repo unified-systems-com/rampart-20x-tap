@@ -1,6 +1,6 @@
 manifest_version = "0"
 plugin_version = "0.1.0"
-requires_tap = ">=0.3.0"
+requires_tap = ">=0.3.1"
 slug = "rampart_20x"
 name = "Rampart 20x"
 description = "Rampart 20x: the product container for a full FedRAMP 20x analysis and review platform (trust center, VDR mapping, diagramming, KSI implementation). v0 is deliberately empty: plugins are composed into it as they are built."
